@@ -33,6 +33,12 @@ public class ActivityHome extends AppCompatActivity {
             dataSource_penghubungTabel.insertDataKeGrammar(4, "Some factors .......................... to health outcomes among African Americans include descrimination, health issues, and nonaccess to medical care.", "D", "D.Contributing adalah klausa kata sifat yang berupa kalimat aktif merupakan jawaban yang tepat untuk kalimat yang membutuhkan klausa kata sifat");
             dataSource_penghubungTabel.insertDataKeGrammar(5, "Medications of Alzheimer’s disease should target specific symptoms ...................... their effects can be monitored", "B", "Kata hubung koordinatif yang paling tepat adalah B.So");
             dataSource_penghubungTabel.insertDataKeGrammar(6, "Recently, stents have been inserted into the ........................... artery to help preserve blood flow.", "B", "Susunan pilihan jawaban yang paling tepat");
+            dataSource_penghubungTabel.insertDataKeGrammar(7, "People were outraged at the amount of audacity the president of United States has when he was threatening Iran over ___ territory. \n
+            The most appropriate word to fill in the blank is... ", "D", "Susunan pilihan jawaban yang paling tepat");
+            dataSource_penghubungTabel.insertDataKeGrammar(8, "This is the girl _____ they love. \n
+            The most appropriate word to fill in the blank is... ", "C", "Susunan pilihan jawaban yang paling tepat");
+
+
         }
 
         if(dataSource_penghubungTabel.hitungrecordOpsi()== 0) {
@@ -60,6 +66,14 @@ public class ActivityHome extends AppCompatActivity {
             dataSource_penghubungTabel.insertDataKeOpsi(22, "B.newly opened", 6);
             dataSource_penghubungTabel.insertDataKeOpsi(23, "C.newly open", 6);
             dataSource_penghubungTabel.insertDataKeOpsi(24, "D.new openly", 6);
+            dataSource_penghubungTabel.insertDataKeOpsi(25, "A.their", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(26, "B.her", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(27, "C.it's", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(28, "D.its", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(29, "A.which", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(30, "B.who", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(31, "C.whom", 2);
+            dataSource_penghubungTabel.insertDataKeOpsi(32, "D.what", 2);
 
 
         }
