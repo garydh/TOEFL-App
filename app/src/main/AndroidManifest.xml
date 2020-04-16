@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.djakaumbarawurung.persipantestcept">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.gerdev.toefllearningapp.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityHome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityQuiz" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityKuisGrammar" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityKuisReading" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityAbout" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityHasil" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityListening" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityCekJawabanReading" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityHasilReading" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityListeningPartB" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityCekJawabanListening" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityCekJawabanListeningB" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityCekJawabanGrammar" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityKuisReading2" />
+        <activity android:name="com.example.gerdev.toefllearningapp.Activity_Cek_ListeningA" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityTambahSoalgrammar" />
+        <activity android:name="com.example.gerdev.toefllearningapp.AdminMenu" />
+        <activity android:name="com.example.gerdev.toefllearningapp.CRUD" />
+        <activity android:name="com.example.gerdev.toefllearningapp.TambahReading" />
+        <activity android:name="com.example.gerdev.toefllearningapp.CRUDnarasi" />
+        <activity android:name="com.example.gerdev.toefllearningapp.AdminGrammarActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_grammar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pertanyaan: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSoalGrammarCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[soal grammar]" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jawaban: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJawabanGrammarCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[jawaban]" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Penjelasan: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPenjelasanGrammarCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[penjelasan]" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Opsi: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOpsiGrammarCv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[opsi]" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
