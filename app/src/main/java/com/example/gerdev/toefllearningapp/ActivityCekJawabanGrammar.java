@@ -50,7 +50,7 @@ public class ActivityCekJawabanGrammar extends AppCompatActivity {
     public void nextCekGrammar(View view) {
         if (btnNextCekGrammar.getText().toString().equalsIgnoreCase("next")) {
             //bila belum sampai di soal terakhir, tampilkan soal-soal selanjutnya
-            if (indexAktivitasUser < userLogArrayList.size()) {
+            if (indexAktivitasUser < userLogArrayList.size() - 1) {
                 indexAktivitasUser++;
                 showQuestion(indexAktivitasUser);
             } else {
