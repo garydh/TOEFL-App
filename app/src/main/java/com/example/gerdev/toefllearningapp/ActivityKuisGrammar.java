@@ -24,6 +24,8 @@ import java.util.Random;
 public class ActivityKuisGrammar extends AppCompatActivity {
     TextView TvSoal, TvOpsi1, TvOpsi2, TvOpsi3, TvOpsi4, TvPenjelasan, TxtPenjelasan;
     Button Bnext;
+    Button Bback;
+
     DataSource_PenghubungTabel dataSource_penghubungTabel;
     ArrayList<Integer> alidPertanyaan;
     int IndexGrammar = 0;
@@ -49,7 +51,7 @@ public class ActivityKuisGrammar extends AppCompatActivity {
 
         //  BCheck = (Button) findViewById(R.id.Btncek);
         Bnext = (Button) findViewById(R.id.BtnNext);
-        //Bback = (Button) findViewById(R.id.BtnBack);
+        Bback = (Button) findViewById(R.id.BtnBack);
 
 
         dataSource_penghubungTabel = new DataSource_PenghubungTabel(this);
@@ -64,6 +66,7 @@ public class ActivityKuisGrammar extends AppCompatActivity {
 //
 
         Bnext.setEnabled(true);
+        Bback.setEnabled(true);
 
 //        Bnext.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -114,24 +117,28 @@ public class ActivityKuisGrammar extends AppCompatActivity {
         jawabanUser = "a";
         setOpsi(TvOpsi1, TvOpsi2, TvOpsi3, TvOpsi4);
         Bnext.setEnabled(true);
+        Bback.setEnabled(true);
     }
 
     public void opsiKlik2(View view) {
         jawabanUser = "b";
         setOpsi(TvOpsi2, TvOpsi1, TvOpsi3, TvOpsi4);
         Bnext.setEnabled(true);
+        Bback.setEnabled(true);
     }
 
     public void opsiKlik3(View view) {
         jawabanUser = "c";
         setOpsi(TvOpsi3, TvOpsi1, TvOpsi2, TvOpsi4);
         Bnext.setEnabled(true);
+        Bback.setEnabled(true);
     }
 
     public void opsiKlik4(View view) {
         jawabanUser = "d";
         setOpsi(TvOpsi4, TvOpsi1, TvOpsi2, TvOpsi3);
         Bnext.setEnabled(true);
+        Bback.setEnabled(true);
     }
 
     private void setOpsi(TextView tvdipilih, TextView tvTdkDiplih1, TextView tvtdkDiplih2, TextView tvtdkdipilih3) {
@@ -159,6 +166,34 @@ public class ActivityKuisGrammar extends AppCompatActivity {
         TvOpsi4.setTextColor((Color.parseColor("#000000")));
     }
 
+    public void tampilkanPertanyaanSebelumnya(View view) {
+        //menyimpan aktivitas user di kuis grammar ke obyek userLog
+        UserLog userLog = new UserLog();
+        userLog.setJawabanUser(jawabanUser);
+        Grammar grammar2 = dataSource_penghubungTabel.ambilpertanyaanSesuaiId(alidPertanyaan.get(IndexGrammar));
+        userLog.setKunci(grammar2.getJawaban());
+        userLog.setPenjelasan(grammar2.getPenjelasan());
+        userLog.setPertanyaan(grammar2.getPertanyaan());
+
+        if (IndexGrammar > 0) {
+            if (Bnext.getText().toString().equalsIgnoreCase("Finish")) {
+                Bnext.setText("Next");
+            }
+            //menambah (increment) index grammar untuk menuju ke soal selanjutnya
+            IndexGrammar--;
+
+            //mengambil id soal selanjutnya dari ArrayList yang berisi id soal
+            int idPertanyaan = alidPertanyaan.get(IndexGrammar);
+
+            //menampilkan soal grammar beserta opsi
+            bentukKuis(idPertanyaan);
+
+            //menyimpan aktivitas user ke ArrayList userLogArrayList
+            userLogArrayList.add(userLog);
+
+        }
+    }
+
 
     // METHOD UNTUK NEXT
     public void tampilkanPertanyaanSelanjutnya(View view) {
@@ -166,7 +201,7 @@ public class ActivityKuisGrammar extends AppCompatActivity {
         // if (!sudahCekJawaban) {
 
         // tombol Next setelah sampai pada pertanyaan terakhir untuk narasi terakhir akan menampilkan ActivityCekJawaban
-        if (Bnext.getText().toString().equalsIgnoreCase("CHECK ANSWER")) {
+        if (Bnext.getText().toString().equalsIgnoreCase("Finish")) {
             Intent intent = new Intent(ActivityKuisGrammar.this, ActivityCekJawabanGrammar.class);
 
             //mengirim data aktivitas user (soal serta jawaban yang telah dipilih user) ke activity selanjutnya
@@ -200,7 +235,7 @@ public class ActivityKuisGrammar extends AppCompatActivity {
                     userLogArrayList.add(userLog);
 
                 } else {
-                    Bnext.setText("CHECK ANSWER");
+                    Bnext.setText("Finish");
 
 
                 }

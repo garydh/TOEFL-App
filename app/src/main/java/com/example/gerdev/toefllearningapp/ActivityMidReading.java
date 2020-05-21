@@ -22,7 +22,7 @@ public class ActivityMidReading extends AppCompatActivity {
     }
 
     public void tampilkanMaterialReading(View view) {
-        Intent intent = new Intent(ActivityMidReading.this, ActivityKuisReading2.class);
+        Intent intent = new Intent(ActivityMidReading.this, ActivityMaterialGrammar.class);
         startActivity(intent);
     }
 

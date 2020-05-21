@@ -17,9 +17,10 @@ public class ActivityMidListening extends AppCompatActivity {
     }
 
     public void tampilkanMaterialListening(View view) {
-        Intent intent = new Intent(ActivityMidListening.this, ActivityKuisReading2.class);
+        Intent intent = new Intent(ActivityMidListening.this, ActivityMaterialGrammar.class);
         startActivity(intent);
     }
+
     public void tampilkanSoalListening(View view) {
         Intent intent = new Intent(ActivityMidListening.this, ActivityListening.class);
         startActivity(intent);

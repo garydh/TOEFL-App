@@ -72,18 +72,36 @@
 
 
     </ScrollView>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/BtnBack"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Next"
-            android:id="@+id/BtnNext"
-            android:onClick="tampilkanPertanyaanSelanjutnya"
+            android:layout_weight="0.5"
+            android:onClick="tampilkanPertanyaanSebelumnya"
+            android:text="Back"
             android:textSize="25dp"
             android:background="#FF9900"
             android:textColor="#FFFFFF"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/BtnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="#FF9900"
+            android:onClick="tampilkanPertanyaanSelanjutnya"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+    </LinearLayout>
 
 
 </RelativeLayout>

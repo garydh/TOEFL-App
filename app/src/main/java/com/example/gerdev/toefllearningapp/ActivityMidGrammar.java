@@ -22,7 +22,7 @@ public class ActivityMidGrammar extends AppCompatActivity {
     }
 
     public void tampilkanMaterialGrammar(View view) {
-        Intent intent = new Intent(ActivityMidGrammar.this, ActivityKuisReading2.class);
+        Intent intent = new Intent(ActivityMidGrammar.this, ActivityMidGrammarTopic.class);
         startActivity(intent);
     }
 

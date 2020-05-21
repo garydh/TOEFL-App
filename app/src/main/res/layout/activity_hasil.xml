@@ -79,11 +79,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:onClick="exitApp"
-            android:text="Finish"
-            android:textSize="25dp"
             android:background="#FF9900"
-            android:textColor="#FFFFFF"/>
+            android:onClick="goToHome"
+            android:text="Finish"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
     </LinearLayout>
 
 

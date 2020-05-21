@@ -27,12 +27,16 @@
         </activity>
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityQuiz" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityMidGrammar" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityMidGrammarTopic" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityMaterialGrammar" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityKuisGrammar" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityMidReading" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityMaterialReading" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityKuisReading" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityAbout" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityHasil" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityMidListening" />
+        <activity android:name="com.example.gerdev.toefllearningapp.ActivityMaterialListening" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityListening" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityCekJawabanReading" />
         <activity android:name="com.example.gerdev.toefllearningapp.ActivityHasilReading" />
