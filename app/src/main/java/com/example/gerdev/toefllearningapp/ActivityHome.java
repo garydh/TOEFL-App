@@ -35,8 +35,6 @@ public class ActivityHome extends AppCompatActivity {
             dataSource_penghubungTabel.insertDataKeGrammar(6, "Recently, stents have been inserted into the ........................... artery to help preserve blood flow.", "B", "Susunan pilihan jawaban yang paling tepat");
             dataSource_penghubungTabel.insertDataKeGrammar(7, "People were outraged at the amount of audacity the president of United States has when he was threatening Iran over ___ territory.\nThe most appropriate word to fill in the blank is... ", "D", "Susunan pilihan jawaban yang paling tepat");
             dataSource_penghubungTabel.insertDataKeGrammar(8, "This is the girl _____ they love.\nThe most appropriate word to fill in the blank is... ", "C", "Susunan pilihan jawaban yang paling tepat");
-
-
         }
 
         if(dataSource_penghubungTabel.hitungrecordOpsi()== 0) {
@@ -54,7 +52,7 @@ public class ActivityHome extends AppCompatActivity {
             dataSource_penghubungTabel.insertDataKeOpsi(12, "D.adhere individual which", 3);
             dataSource_penghubungTabel.insertDataKeOpsi(13, "A.contribution", 4);
             dataSource_penghubungTabel.insertDataKeOpsi(14, "B.contributed", 4);
-            dataSource_penghubungTabel.insertDataKeOpsi(15, "C.contibute", 4);
+            dataSource_penghubungTabel.insertDataKeOpsi(15, "C.contribute", 4);
             dataSource_penghubungTabel.insertDataKeOpsi(16, "D.contributing", 4);
             dataSource_penghubungTabel.insertDataKeOpsi(17, "A.and", 5);
             dataSource_penghubungTabel.insertDataKeOpsi(18, "B.so", 5);
@@ -66,14 +64,12 @@ public class ActivityHome extends AppCompatActivity {
             dataSource_penghubungTabel.insertDataKeOpsi(24, "D.new openly", 6);
             dataSource_penghubungTabel.insertDataKeOpsi(25, "A.their", 7);
             dataSource_penghubungTabel.insertDataKeOpsi(26, "B.her", 7);
-            dataSource_penghubungTabel.insertDataKeOpsi(27, "C.it's", 7);
+            dataSource_penghubungTabel.insertDataKeOpsi(27, "C.it`s", 7);
             dataSource_penghubungTabel.insertDataKeOpsi(28, "D.its", 7);
             dataSource_penghubungTabel.insertDataKeOpsi(29, "A.which", 8);
             dataSource_penghubungTabel.insertDataKeOpsi(30, "B.who", 8);
             dataSource_penghubungTabel.insertDataKeOpsi(31, "C.whom", 8);
             dataSource_penghubungTabel.insertDataKeOpsi(32, "D.what", 8);
-
-
         }
 
 //----------- START OF READING PART

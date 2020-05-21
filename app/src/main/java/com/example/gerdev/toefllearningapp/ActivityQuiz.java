@@ -16,25 +16,19 @@ public class ActivityQuiz extends AppCompatActivity {
         this.setTitle("TOEFL Learning App");
     }
 
-    public void tampilkanSoalGrammar(View view) {
-        Intent intent = new Intent(ActivityQuiz.this, ActivityKuisGrammar.class);
+    public void tampilkanMidGrammar(View view) {
+        Intent intent = new Intent(ActivityQuiz.this, ActivityMidGrammar.class);
         startActivity(intent);
     }
 
-    public void paketSoalReading(View view) {
-        Intent intent = new Intent(ActivityQuiz.this, ActivityKuisReading2.class);
+    public void tampilkanMidReading(View view) {
+        Intent intent = new Intent(ActivityQuiz.this, ActivityMidReading.class);
         startActivity(intent);
     }
 
-    public void paketSoalListening(View view) {
-        Intent intent = new Intent(ActivityQuiz.this, ActivityListening.class);
+    public void tampilkanMidListening(View view) {
+        Intent intent = new Intent(ActivityQuiz.this, ActivityMidListening.class);
         startActivity(intent);
     }
-
-    public void paketSoalListeningB(View view) {
-        Intent intent = new Intent(ActivityQuiz.this, ActivityListeningPartB.class);
-        startActivity(intent);
-    }
-
 
 }

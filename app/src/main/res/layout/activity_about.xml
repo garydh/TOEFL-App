@@ -29,10 +29,20 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
+        android:id="@+id/header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:text="Kelompok 8 RBPL-D"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:id="@+id/nama_anggota1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/header"
+        android:layout_below="@+id/header2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="53dp"
         android:text="Abshari Azka Saffanah"

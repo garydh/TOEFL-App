@@ -11,18 +11,18 @@
     android:background="#FFFFCC">
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="400dp"
         android:layout_height="70dp"
-        android:text="GRAMMAR"
-        android:id="@+id/button3"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="75dp"
-        android:onClick="tampilkanSoalGrammar"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
+        android:layout_marginBottom="5dp"
         android:background="#3300FF"
-        android:layout_marginBottom="5dp" />
+        android:onClick="tampilkanMidGrammar"
+        android:text="GRAMMAR"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
 
     <Button
         android:layout_width="400dp"
@@ -31,7 +31,7 @@
         android:id="@+id/button4"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:onClick="paketSoalReading"
+        android:onClick="tampilkanMidReading"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:background="#FF9900"
@@ -45,24 +45,11 @@
         android:id="@+id/button5"
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:onClick="paketSoalListening"
+        android:onClick="tampilkanMidListening"
         android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:background="#3300FF"
         android:layout_marginBottom="5dp" />
-
-    <Button
-        android:layout_width="400dp"
-        android:layout_height="70dp"
-        android:text="Listening B"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:onClick="paketSoalListeningB"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:background="#FF9900"/>
-
 
 
 </RelativeLayout>
